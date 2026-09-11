@@ -12,13 +12,13 @@
     <header class="header">
       <div>
         <h1>💚 Our Money</h1>
-        <p>Shared with my wife ❤️</p>
+        <p>Shared with my honey IKRAM ❤️</p>
       </div>
     </header>
 
     <section class="balance-card">
       <span>Current Balance</span>
-      <strong id="balance">$0.00</strong>
+      <strong id="balance">0.00</strong>
     </section>
 
     <div class="buttons">
@@ -85,7 +85,7 @@ let transactions = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
 let currentType = "in";
 
 function money(value) {
-  return "$" + Number(value).toLocaleString(undefined, {
+  return "" + Number(value).toLocaleString(undefined, {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2
   });
